@@ -1,0 +1,112 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage{resume}  % Style package
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, 
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+
+\pagenumbering{gobble}
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item \href{https://github.com/jon-codes}{github.com/jon-codes}
+  \item \href{https://linkedin.com/in/jonathon-webb}{linkedin.com/in/jonathon-webb}
+  \item \href{mailto:webb.jonathon@gmail.com}{webb.jonathon@gmail.com}
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Jonathon Webb}} \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \textsc{}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- EXPERIENCE ----------------------
+\sectionBlock{
+\section{Experience}
+}{
+\experienceHeading
+  {Grayscale Labs}{Atlanta, Georgia}
+  {Senior Software Engineer}{Jun 2024 - Feb 2025}
+\itemListStart
+  \myItem{Led 5-engineer feature delivery workstream, managing sprint planning, technical design reviews, and release coordination.}
+  \myItem{Spearheaded LLM hiring assistant implementation, delivering end-to-end job search, screening, and application workflow for SuccessFactors job boards using Claude 3.5 Sonnet on AWS Bedrock.}
+  \myItem{Architected and implemented migration of core recruiting platform to a flexible RBAC system with configurable entitlements.}
+  \myItem{Migrated existing frontend CI/CD pipelines from Heroku to AWS Cloudfront/S3.}
+  \myItem{Maintained system reliability through on-call rotation, resolving critical issues and implementing preventative alerting via CloudWatch/DataDog.}
+  \myItem{Participated in the technical hiring process by developing interview templates and leading evaluations.}
+\itemListEnd
+
+\experienceHeading
+  {Grayscale Labs}{Atlanta, Georgia}
+  {Software Engineer}{Oct 2022 - Jun 2024}
+\itemListStart
+  \myItem{Led 3-person team to create Calendly-like scheduling platform for recruiters, integrating with Microsoft 365 and Google Workspace APIs.}
+  \myItem{Executed full rewrite of core Chrome Extension product to Manifest v3, successfully migrating \~{}10,000 users while maintaining feature parity.}
+  \myItem{Engineered high-throughput data pipeline for SAP SuccessFactors, synchronizing hundreds of millions of candidate records for enterprise clients including American Airlines and Carvana.}
+  \myItem{Mentored junior engineers through code reviews, pair programming sessions, and technical documentation improvements.}
+\itemListEnd
+
+\experienceHeading
+  {With One Vision}{Atlanta, Georgia}
+  {Software Engineer}{Feb 2022 - Oct 2022}
+\itemListStart
+  \myItem{Led backend development for new marketing lead management application, including REST/GraphQL API design and TypeScript implementation in Node.js}
+\itemListEnd
+
+\experienceHeading
+  {E.R. Snell}{Atlanta, Georgia}
+  {Business Analyst}{Oct 2018 - Feb 2022}
+\itemListStart
+  \myItem{Automated existing operational and financial reporting for a 750-vehicle fleet.}
+\itemListEnd
+
+\experienceHeading
+  {Delta Global Services}{Atlanta, Georgia}
+  {Business Analyst}{Jan 2018 - Oct 2018}
+\itemListStart
+  \myItem{Developed reports to support introduction of the Airbus A321 to the Delta fleet.}
+\itemListEnd
+
+\experienceHeading
+  {9Lenses}{Sterling, Virginia}
+  {Data Science Intern}{May 2016 - Aug 2016}
+\itemListStart
+  \myItem{Introduced sentiment analysis via machine learning to a customer survey platform.}
+\itemListEnd
+}
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: TypeScript, JavaScript, Ruby, Python, Go, Java, SQL, C, HTML, CSS
+\item \emph{Technologies}: AWS, PostgreSQL, React, Docker, GraphQL, REST, Protobufs, Linux, Git
+\skillListEnd
+}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Georgia Technical Institute}{Atlanta, Georgia}
+  {M.S., Computer Science}{2025 - 2027 \footnotesize{\textit{(expected)}}}
+\itemListStart
+  \myItem{Specialization: Computing Systems}
+\itemListEnd
+
+\eduHeading
+  {Western Governors University}{Salt Lake City, Utah}
+  {B.S., Computer Science}{2022 - 2024}
+}
+
+\end{document}
+
